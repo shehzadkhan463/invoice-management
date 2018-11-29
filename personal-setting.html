@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>IMS | Personal Settings</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+      <a class="navbar-brand brand-logo mr-0" href="index.html">
+        <b>Logo</b>
+      </a>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-center px-sm-4">
+      <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-inline-block" type="button" data-toggle="minimize">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center mx-4 mx-sm-0" type="button" data-toggle="offcanvas">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="d-flex ml-3 flex-grow-1 align-items-center">
+        <ul class="list-unstyled d-md-flex mb-0 ml-auto align-items-center d-none">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="fa fa-user mr-2"></span> John Doe
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="personal-setting.html">Personal Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav pt-3">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="menu-icon mr-3 fa fa-home fa-lg"></i>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customers.html">
+            <i class="menu-icon mr-3 fa fa-users fa-lg"></i>
+            <span class="menu-title">Customers</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">
+            <i class="menu-icon mr-3 fa fa-cube fa-lg"></i>
+            <span class="menu-title">Products</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quotations.html">
+            <i class="menu-icon mr-3 fa fa-file-text-o fa-lg"></i>
+            <span class="menu-title">Quotations</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="invoices.html">
+            <i class="menu-icon mr-3 fa fa-file-text-o fa-lg"></i>
+            <span class="menu-title">Invoices</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="payments.html">
+            <i class="menu-icon mr-3 fa fa-credit-card fa-lg"></i>
+            <span class="menu-title">Payments</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- partial -->
+    <div class="main-panel bg-light">
+      <div class="content-wrapper">
+        <div class="page-title">
+          <h4 class="mb-3">Personal Settings</h4>
+        </div>
+        <div class="card border-0">
+          <div class="card-header bg-white">
+            <b>Information</b>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="title" class="d-flex align-items-center">Title<small class="ml-auto">(optional)</small></label>
+                  <input type="text" class="form-control" id="title" placeholder="Administrator">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="email" class="d-flex align-items-center">Email address<small class="ml-auto">(optional)</small></label>
+                  <input type="email" class="form-control" id="email" placeholder="admin@lumen.test">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="mobile-number" class="d-flex align-items-center">Mobile Number<small class="ml-auto">(optional)</small></label>
+                  <input type="text" class="form-control" id="mobile-number" placeholder="9000000">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="telephone" class="d-flex align-items-center">Telephone<small class="ml-auto">(optional)</small></label>
+                  <input type="text" class="form-control" id="telephone" placeholder="200000">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="extension" class="d-flex align-items-center">Extension<small class="ml-auto">(optional)</small></label>
+                  <input type="text" class="form-control" id="extension" placeholder="101">
+                </div>
+              </div>
+              <div class="row border-bottom mb-3">
+                <div class="form-group col-12">
+                  <label for="email-signature" class="d-flex align-items-center">Email Signature<a href="#" class="ml-auto"><small>Generate</small></a></label>
+                  <textarea rows="4" id="email-signature" class="form-control"></textarea>
+                </div>
+              </div>
+              <p><b>Password Settings</b></p>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="old-pass" class="d-flex align-items-center">Old Password<small class="ml-auto"><i class="fa fa-eye"></i><i class="fa fa-eye-slash"></i></small></label>
+                  <input type="password" class="form-control" id="old-pass" placeholder="Password">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="new-pass" class="d-flex align-items-center">New Password<small class="ml-auto"><i class="fa fa-eye"></i><i class="fa fa-eye-slash"></i></small></label>
+                  <input type="password" class="form-control" id="new-pass" placeholder="Password">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="cnfm-new-pass" class="d-flex align-items-center">Confirm New Password<small class="ml-auto"><i class="fa fa-eye"></i><i class="fa fa-eye-slash"></i></small></label>
+                  <input type="password" class="form-control" id="cnfm-new-pass" placeholder="Password">
+                </div>
+                <div class="col-12 text-right">
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <footer class="footer py-3 bg-white">
+        <div class="container-fluid clearfix">
+          <span class="d-block text-center text-sm-left d-sm-inline-block">
+            <small>Copyright &copy; 2018. All rights reserved.</small>
+          </span>
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+          </span>
+        </div>
+      </footer>
+    </div>
+    <!-- main-panel ends -->
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
